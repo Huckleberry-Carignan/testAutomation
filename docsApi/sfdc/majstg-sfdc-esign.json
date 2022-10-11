@@ -1,0 +1,86 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+      "description" : "Sfdc Esign Service",
+      "version" : "2021-08-16T16:13:37Z",
+      "title" : "majstg-sfdc-esign"
+    },
+    "host" : "8ed1cuxdcg.execute-api.us-west-2.amazonaws.com",
+    "basePath" : "/Stage",
+    "schemes" : [ "https" ],
+    "paths" : {
+      "/_status" : {
+        "get" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/copyDocument" : {
+        "post" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/envelopes/{envelopeId}" : {
+        "get" : {
+          "parameters" : [ {
+            "name" : "envelopeId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/envelopes/{envelopeId}/document" : {
+        "get" : {
+          "parameters" : [ {
+            "name" : "envelopeId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/initEsign" : {
+        "post" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/profile" : {
+        "get" : {
+          "parameters" : [ {
+            "name" : "projectId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      }
+    },
+    "securityDefinitions" : {
+      "api_key" : {
+        "type" : "apiKey",
+        "name" : "x-api-key",
+        "in" : "header"
+      }
+    }
+  }

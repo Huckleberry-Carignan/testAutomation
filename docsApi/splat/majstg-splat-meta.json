@@ -1,0 +1,142 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+      "version" : "1",
+      "title" : "majstg-splat-meta"
+    },
+    "host" : "cq41918t0i.execute-api.us-west-2.amazonaws.com",
+    "basePath" : "/Stage",
+    "schemes" : [ "https" ],
+    "paths" : {
+      "/appData" : {
+        "get" : {
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "400" : {
+              "description" : "400 response"
+            },
+            "401" : {
+              "description" : "401 response"
+            },
+            "404" : {
+              "description" : "404 response"
+            }
+          },
+          "security" : [ {
+            "HybridAuth" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/customerAppData/{proposalToken}" : {
+        "get" : {
+          "parameters" : [ {
+            "name" : "proposalToken",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "400" : {
+              "description" : "400 response"
+            },
+            "401" : {
+              "description" : "401 response"
+            },
+            "404" : {
+              "description" : "404 response"
+            }
+          },
+          "security" : [ {
+            "CustomerProposalAuthorizer" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "name" : "proposalToken",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securityDefinitions" : {
+      "HybridAuth" : {
+        "type" : "apiKey",
+        "name" : "Authorization",
+        "in" : "header",
+        "x-amazon-apigateway-authtype" : "custom"
+      },
+      "CustomerProposalAuthorizer" : {
+        "type" : "apiKey",
+        "name" : "Unused",
+        "in" : "header",
+        "x-amazon-apigateway-authtype" : "custom"
+      }
+    }
+  }

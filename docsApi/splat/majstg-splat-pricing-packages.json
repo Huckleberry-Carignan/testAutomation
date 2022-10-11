@@ -1,0 +1,605 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+      "version" : "2022-09-23T18:27:45Z",
+      "title" : "majstg-splat-pricing-packages"
+    },
+    "host" : "j72ow1r9u6.execute-api.us-west-2.amazonaws.com",
+    "basePath" : "/Stage",
+    "schemes" : [ "https" ],
+    "paths" : {
+      "/flexPricing" : {
+        "post" : {
+          "parameters" : [ {
+            "name" : "Authorization",
+            "in" : "header",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : { },
+          "security" : [ {
+            "majstgsplatpricingpackageshybridAuthA6E48549" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "responses" : {
+            "204" : {
+              "description" : "204 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Credentials" : {
+                  "type" : "string"
+                },
+                "Vary" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/flexProposal" : {
+        "post" : {
+          "parameters" : [ {
+            "name" : "Authorization",
+            "in" : "header",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : { },
+          "security" : [ {
+            "majstgsplatpricingpackageshybridAuthA6E48549" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "responses" : {
+            "204" : {
+              "description" : "204 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Credentials" : {
+                  "type" : "string"
+                },
+                "Vary" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/freedomPricing" : {
+        "post" : {
+          "consumes" : [ "application/json" ],
+          "parameters" : [ {
+            "name" : "Authorization",
+            "in" : "header",
+            "required" : true,
+            "type" : "string"
+          }, {
+            "in" : "body",
+            "name" : "MODEL207945",
+            "required" : true,
+            "schema" : {
+              "$ref" : "#/definitions/MODEL207945"
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "400" : {
+              "description" : "400 response"
+            },
+            "401" : {
+              "description" : "401 response"
+            },
+            "404" : {
+              "description" : "404 response"
+            }
+          },
+          "security" : [ {
+            "HybridTokenAuthorizer" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/freedomProposal" : {
+        "post" : {
+          "consumes" : [ "application/json" ],
+          "parameters" : [ {
+            "name" : "Authorization",
+            "in" : "header",
+            "required" : true,
+            "type" : "string"
+          }, {
+            "in" : "body",
+            "name" : "MODELa36ff2",
+            "required" : true,
+            "schema" : {
+              "$ref" : "#/definitions/MODELa36ff2"
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "400" : {
+              "description" : "400 response"
+            },
+            "401" : {
+              "description" : "401 response"
+            },
+            "404" : {
+              "description" : "404 response"
+            }
+          },
+          "security" : [ {
+            "HybridTokenAuthorizer" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pricingPackages" : {
+        "post" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "name" : "Authorization",
+            "in" : "header",
+            "required" : true,
+            "type" : "string"
+          }, {
+            "in" : "body",
+            "name" : "MODEL6120e0",
+            "required" : true,
+            "schema" : {
+              "$ref" : "#/definitions/MODEL6120e0"
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "schema" : {
+                "$ref" : "#/definitions/ArrayOfMODEL1ead14"
+              },
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "400" : {
+              "description" : "400 response"
+            },
+            "401" : {
+              "description" : "401 response"
+            },
+            "404" : {
+              "description" : "404 response"
+            }
+          },
+          "security" : [ {
+            "HybridTokenAuthorizer" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/pricingPackages/{pricingPackageId}/proposal" : {
+        "post" : {
+          "consumes" : [ "application/json" ],
+          "parameters" : [ {
+            "name" : "pricingPackageId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          }, {
+            "name" : "Authorization",
+            "in" : "header",
+            "required" : true,
+            "type" : "string"
+          }, {
+            "in" : "body",
+            "name" : "MODEL472c7f",
+            "required" : true,
+            "schema" : {
+              "$ref" : "#/definitions/MODEL472c7f"
+            }
+          } ],
+          "responses" : {
+            "400" : {
+              "description" : "400 response"
+            },
+            "401" : {
+              "description" : "401 response"
+            },
+            "204" : {
+              "description" : "204 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          },
+          "security" : [ {
+            "HybridTokenAuthorizer" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "name" : "pricingPackageId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/unifiedPricing" : {
+        "post" : {
+          "parameters" : [ {
+            "name" : "Authorization",
+            "in" : "header",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : { },
+          "security" : [ {
+            "majstgsplatpricingpackageshybridAuthA6E48549" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "responses" : {
+            "204" : {
+              "description" : "204 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Credentials" : {
+                  "type" : "string"
+                },
+                "Vary" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securityDefinitions" : {
+      "majstgsplatpricingpackageshybridAuthA6E48549" : {
+        "type" : "apiKey",
+        "name" : "Authorization",
+        "in" : "header",
+        "x-amazon-apigateway-authtype" : "custom"
+      },
+      "HybridTokenAuthorizer" : {
+        "type" : "apiKey",
+        "name" : "Authorization",
+        "in" : "header",
+        "x-amazon-apigateway-authtype" : "custom"
+      }
+    },
+    "definitions" : {
+      "MODEL207945" : {
+        "type" : "object",
+        "required" : [ "installPartner", "pvSystemSpecs", "salesDivision", "salesPartner", "state", "storageSystemSpecs", "utility" ],
+        "properties" : {
+          "pvSystemSpecs" : {
+            "type" : "object",
+            "properties" : {
+              "systemSize" : {
+                "type" : "object",
+                "properties" : {
+                  "unitPrefix" : {
+                    "type" : "string",
+                    "enum" : [ "k", "M" ]
+                  },
+                  "value" : {
+                    "type" : "number"
+                  }
+                },
+                "required" : [ "unitPrefix", "value" ]
+              },
+              "moduleType" : {
+                "type" : "string",
+                "enum" : [ "", "Premium", "UltraPremium" ]
+              },
+              "annualProduction" : {
+                "type" : "object",
+                "properties" : {
+                  "unitPrefix" : {
+                    "type" : "string",
+                    "enum" : [ "k", "M" ]
+                  },
+                  "value" : {
+                    "type" : "number"
+                  }
+                },
+                "required" : [ "unitPrefix", "value" ]
+              }
+            },
+            "required" : [ "annualProduction", "moduleType", "systemSize" ]
+          },
+          "salesPartner" : {
+            "type" : "string"
+          },
+          "installPartner" : {
+            "type" : "string"
+          },
+          "storageSystemSpecs" : {
+            "type" : "object",
+            "properties" : {
+              "batteryModel" : {
+                "type" : "string"
+              },
+              "batteryCount" : {
+                "type" : "integer"
+              }
+            },
+            "required" : [ "batteryCount", "batteryModel" ]
+          },
+          "utility" : {
+            "type" : "string"
+          },
+          "state" : {
+            "type" : "string"
+          },
+          "salesDivision" : {
+            "type" : "string"
+          }
+        }
+      },
+      "MODEL6120e0" : {
+        "type" : "object",
+        "required" : [ "prospectId", "role" ],
+        "properties" : {
+          "prospectId" : {
+            "type" : "string"
+          },
+          "role" : {
+            "type" : "string"
+          },
+          "forceRefresh" : {
+            "type" : "string"
+          }
+        }
+      },
+      "ArrayOfMODEL1ead14" : {
+        "type" : "array",
+        "items" : {
+          "type" : "object",
+          "properties" : {
+            "estimatedMonthlyPayment" : {
+              "type" : "string"
+            },
+            "servicePackage" : {
+              "type" : "object",
+              "properties" : {
+                "name" : {
+                  "type" : "string"
+                },
+                "serviceOptionList" : {
+                  "type" : "array",
+                  "items" : {
+                    "type" : "string"
+                  }
+                }
+              },
+              "required" : [ "name", "serviceOptionList" ]
+            },
+            "isDefaultForProduct" : {
+              "type" : "boolean"
+            },
+            "ownership" : {
+              "type" : "string"
+            },
+            "productDisplayName" : {
+              "type" : "string"
+            },
+            "isRecommended" : {
+              "type" : "boolean"
+            },
+            "lifetimeSavings" : {
+              "type" : "string"
+            },
+            "totalUpfrontPayment" : {
+              "type" : "string"
+            },
+            "isRecommendedProduct" : {
+              "type" : "boolean"
+            },
+            "id" : {
+              "type" : "string"
+            },
+            "pricePerKwh" : {
+              "type" : "string"
+            },
+            "productName" : {
+              "type" : "string"
+            }
+          },
+          "required" : [ "estimatedMonthlyPayment", "id", "isDefaultForProduct", "isRecommended", "isRecommendedProduct", "lifetimeSavings", "ownership", "pricePerKwh", "productDisplayName", "productName", "servicePackage", "totalUpfrontPayment" ]
+        }
+      },
+      "MODEL472c7f" : {
+        "type" : "object",
+        "required" : [ "prospectId" ],
+        "properties" : {
+          "prospectId" : {
+            "type" : "string"
+          },
+          "savedProjectId" : {
+            "type" : "string"
+          }
+        }
+      },
+      "MODELa36ff2" : {
+        "type" : "object",
+        "required" : [ "designIndex", "prospectId", "savedProjectId", "signedPricePoint" ],
+        "properties" : {
+          "prospectId" : {
+            "type" : "string"
+          },
+          "signedPricePoint" : {
+            "type" : "object",
+            "properties" : {
+              "pricePoint" : {
+                "type" : "object",
+                "properties" : { }
+              },
+              "hash" : {
+                "type" : "string"
+              }
+            },
+            "required" : [ "hash", "pricePoint" ]
+          },
+          "designIndex" : {
+            "type" : "number"
+          },
+          "numAcBatteries" : {
+            "type" : "number"
+          },
+          "savedProjectId" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }

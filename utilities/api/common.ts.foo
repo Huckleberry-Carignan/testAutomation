@@ -1,0 +1,34 @@
+'use strict';
+
+// const request = require('supertest');
+// import request from 'supertest';
+import {request, APIRequestContext } from '@playwright/test';
+
+export default {
+    /**
+     * getToken async function gets token for future API calls
+     * @param {String} tokenUsername
+     * @param {String} tokenPassword
+     * @return {object}
+     */
+    getToken: async function(request, tokenUsername, tokenPassword) {
+        return await request(app).post(
+            `https://foobar/login`,
+            { accept: applicationJson }, 
+            {
+                Email: tokenUsername,
+                Password: tokenPassword,
+            },
+            envConfig.BaseUrl);
+    },
+
+     /**
+     * A better way to format error messages
+     * @param {Object} responseObject error message
+     * @return {String}
+     */
+    detailedErrorMessage: async function(responseObject) {
+        return `Request to endpoint: ${JSON.stringify(responseObject.request)} \n \nReturn error Message: ${JSON.stringify(responseObject.text)} \n \n`;
+    }
+
+}

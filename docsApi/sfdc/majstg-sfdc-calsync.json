@@ -1,0 +1,73 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+      "description" : "Sfdc Calsync Service",
+      "version" : "2022-06-08T22:24:04Z",
+      "title" : "majstg-sfdc-calsync"
+    },
+    "host" : "dpdodqb57g.execute-api.us-west-2.amazonaws.com",
+    "basePath" : "/Stage",
+    "schemes" : [ "https" ],
+    "paths" : {
+      "/handlePushNotification" : {
+        "post" : {
+          "responses" : { }
+        }
+      },
+      "/healthCheck" : {
+        "get" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/scheduleUsers" : {
+        "post" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/settings" : {
+        "get" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/syncCalendar" : {
+        "post" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/syncConfig" : {
+        "post" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/users" : {
+        "get" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      }
+    },
+    "securityDefinitions" : {
+      "api_key" : {
+        "type" : "apiKey",
+        "name" : "x-api-key",
+        "in" : "header"
+      }
+    }
+  }

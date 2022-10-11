@@ -1,0 +1,271 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+      "description" : "SPLAT Notification Api",
+      "version" : "2021-11-15T16:30:21Z",
+      "title" : "majstg-splat-notifications"
+    },
+    "host" : "sqeq6ii0g6.execute-api.us-west-2.amazonaws.com",
+    "basePath" : "/Stage",
+    "schemes" : [ "https" ],
+    "paths" : {
+      "/employee-contacts" : {
+        "get" : {
+          "parameters" : [ {
+            "name" : "searchTerm",
+            "in" : "query",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          },
+          "security" : [ {
+            "HybridAuth" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/my/notifications" : {
+        "get" : {
+          "parameters" : [ {
+            "name" : "endTime",
+            "in" : "query",
+            "required" : true,
+            "type" : "string"
+          }, {
+            "name" : "startTime",
+            "in" : "query",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          },
+          "security" : [ {
+            "HybridAuth" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/my/notifications/acknowledge" : {
+        "post" : {
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          },
+          "security" : [ {
+            "HybridAuth" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "/prospects/{prospectId}/chatter" : {
+        "get" : {
+          "parameters" : [ {
+            "name" : "prospectId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          },
+          "security" : [ {
+            "HybridAuth" : [ ]
+          } ]
+        },
+        "post" : {
+          "consumes" : [ "application/json" ],
+          "parameters" : [ {
+            "name" : "prospectId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          }, {
+            "in" : "body",
+            "name" : "MODEL9b8333",
+            "required" : true,
+            "schema" : {
+              "$ref" : "#/definitions/MODEL9b8333"
+            }
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          },
+          "security" : [ {
+            "HybridAuth" : [ ]
+          } ]
+        },
+        "options" : {
+          "consumes" : [ "application/json" ],
+          "produces" : [ "application/json" ],
+          "parameters" : [ {
+            "name" : "prospectId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Origin" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "securityDefinitions" : {
+      "HybridAuth" : {
+        "type" : "apiKey",
+        "name" : "Authorization",
+        "in" : "header",
+        "x-amazon-apigateway-authtype" : "custom"
+      }
+    },
+    "definitions" : {
+      "MODEL9b8333" : {
+        "type" : "object",
+        "required" : [ "message", "taggedContactIds" ],
+        "properties" : {
+          "taggedContactIds" : {
+            "type" : "array"
+          },
+          "message" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,51 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+      "version" : "2018-06-26T23:30:05Z",
+      "title" : "majstg-sfdc-eauditinfo"
+    },
+    "host" : "ts6wp1ftf1.execute-api.us-west-2.amazonaws.com",
+    "basePath" : "/Stage",
+    "schemes" : [ "https" ],
+    "paths" : {
+      "/design-input-specs/{eauditId}" : {
+        "get" : {
+          "parameters" : [ {
+            "name" : "eauditId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : {
+            "200" : {
+              "description" : "200 response",
+              "headers" : {
+                "Access-Control-Allow-Methods" : {
+                  "type" : "string"
+                },
+                "Access-Control-Allow-Headers" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "400" : {
+              "description" : "400 response"
+            },
+            "401" : {
+              "description" : "401 response"
+            }
+          },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      }
+    },
+    "securityDefinitions" : {
+      "api_key" : {
+        "type" : "apiKey",
+        "name" : "x-api-key",
+        "in" : "header"
+      }
+    }
+  }

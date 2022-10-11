@@ -1,0 +1,44 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+      "description" : "Sfdc Calsync Service",
+      "version" : "2020-06-23T18:45:13Z",
+      "title" : "majstg-sfdc-secure-storage"
+    },
+    "host" : "z1fd88zs5j.execute-api.us-west-2.amazonaws.com",
+    "basePath" : "/Stage",
+    "schemes" : [ "https" ],
+    "paths" : {
+      "/_status" : {
+        "get" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/file" : {
+        "get" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/processUploads" : {
+        "post" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      }
+    },
+    "securityDefinitions" : {
+      "api_key" : {
+        "type" : "apiKey",
+        "name" : "x-api-key",
+        "in" : "header"
+      }
+    }
+  }

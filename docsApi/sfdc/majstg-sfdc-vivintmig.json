@@ -1,0 +1,94 @@
+{
+    "swagger" : "2.0",
+    "info" : {
+      "description" : "Sfdc Calsync Service",
+      "version" : "2021-04-16T21:40:11Z",
+      "title" : "majstg-sfdc-vivintmig"
+    },
+    "host" : "xy7wby6532.execute-api.us-west-2.amazonaws.com",
+    "basePath" : "/Stage",
+    "schemes" : [ "https" ],
+    "paths" : {
+      "/_status" : {
+        "get" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/arrays/{projectId}" : {
+        "get" : {
+          "parameters" : [ {
+            "name" : "projectId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/assets/{projectId}" : {
+        "get" : {
+          "parameters" : [ {
+            "name" : "projectId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/copyArrays" : {
+        "post" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/copyAssets" : {
+        "post" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/copyFiles" : {
+        "post" : {
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      },
+      "/files/{projectId}" : {
+        "get" : {
+          "parameters" : [ {
+            "name" : "projectId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string"
+          } ],
+          "responses" : { },
+          "security" : [ {
+            "api_key" : [ ]
+          } ]
+        }
+      }
+    },
+    "securityDefinitions" : {
+      "api_key" : {
+        "type" : "apiKey",
+        "name" : "x-api-key",
+        "in" : "header"
+      }
+    }
+  }
