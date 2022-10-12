@@ -1,4 +1,4 @@
-//import fetch from 'node-fetch';
+import fetch from 'node-fetch';
 import {describe, expect, test} from '@jest/globals';
 
 describe('sum module', () => {
@@ -10,7 +10,7 @@ describe('sum module', () => {
 
   describe('see if got works', () => {
     test('get a cat fact', async () => {
-        //const foo = await fetch('https://catfact.ninja/fact');
+        const foo = await fetch('https://catfact.ninja/fact');
       expect(3).toBe(3);
     });
   });

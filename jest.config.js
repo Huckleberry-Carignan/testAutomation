@@ -1,4 +1,6 @@
 module.exports = {
+    preset: 'ts-jest',
+    testEnvironment: 'node',
     clearMocks: true,
     collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!src/general/pdfViewer/**/*'],
     transform: {
