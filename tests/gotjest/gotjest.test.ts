@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+//import fetch from 'node-fetch';
 import {describe, expect, test} from '@jest/globals';
 
 describe('sum module', () => {
